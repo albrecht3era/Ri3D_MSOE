@@ -72,6 +72,8 @@ public class RRDualControllerTeleOp extends BasicOpMode_Iterative {
             turn = new SwivelTurn(left_front, left_back, right_front, right_back);
         } else if(gamepad1.b) {
             turn = new TankTurn(left_front, left_back, right_front, right_back);
+        } else if(gamepad1.a) {
+            turn = new DualStickDrive(left_front, left_back, right_front, right_back);
         }
         turn.move(gamepad1.left_stick_x, gamepad1.left_stick_y, check_negative(gamepad1.left_stick_y));
         if(gamepad2.a){

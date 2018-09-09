@@ -17,7 +17,7 @@ public class TankTurn extends Turn {
                 left_back.setPower(x * negative_multiplier);
                 right_front.setPower(-x * negative_multiplier);
                 right_back.setPower(-x * negative_multiplier);
-            } else if (y > MIN_RIGHT_TURN_VALUE) {
+            } else if (x > MIN_RIGHT_TURN_VALUE) {
                 right_front.setPower(-x * negative_multiplier);
                 right_back.setPower(-x * negative_multiplier);
                 left_back.setPower(x * negative_multiplier);

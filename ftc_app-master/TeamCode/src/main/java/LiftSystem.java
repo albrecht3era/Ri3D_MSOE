@@ -28,5 +28,11 @@ public class LiftSystem {
         lift_left.setPower(0);
         lift_right.setPower(0);
         intake.spin(-1.0);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        intake.spin(0.0);
     }
 }
